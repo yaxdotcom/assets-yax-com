@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yax Web Assets</title>
+  <meta name="Description" content="A library of JavaScript, stylesheets, and images for the yax.com project.">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+  <script type="module" src="/scripts/custom-tags/prism-markdown-element.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar is-transparent is-black">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+      Yax.com
+    </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" target="blank" href="https://github.com/yaxdotcom">
+            <span class="icon">
+          <i class="fa fa-github"></i>
+        </span>
+          </a>
+          <a class="navbar-item" target="blank" href="https://twitter.com/danielkehoe">
+            <span class="icon">
+          <i class="fa fa-twitter"></i>
+        </span>
+          </a>
+        </div>
+        <span class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </span>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a itemprop="url" class="navbar-item has-text-white " href="/posts/"><span itemprop="name">Blog</span></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="doc-content" class="content">
+      <article class="message is-info">
+        <div class="message-header">
+          <p>&lt;prism-markdown-element theme="dark" mdsrc="./README.md"&gt;&lt;/prism-markdown-element&gt;</p>
+        </div>
+        <div class="message-body">
+          The &lt;prism-markdown-element&gt; tag should load and display the contents of the README.md Markdown file.
+        </div>
+      </article>
+      <prism-markdown-element theme="dark" mdsrc="./README.md">
+      </prism-markdown-element>
+    </section>
+  </main>
+  <footer class="footer has-text-white has-text-weight-semibold" style="background-color:black;">
+    <div class="container">
+      <div class="content has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <div class="title is-6 has-text-white">Platform</div>
+          </div>
+          <div class="column">
+            <div class="title is-6 has-text-white">Company</div>
+            <p class="is-size-7">
+              <a class="has-text-white" href="posts/history-of-yax/">About Yax</a>
+            </p>
+          </div>
+          <div class="column">
+            <div class="title is-6 has-text-white">Support</div>
+            <p class="is-size-7">
+              <a href="#" class="has-text-white" onclick="$crisp.push(['do','chat:open'])">Click for live chat</a>
+              <br> or email: <a class="has-text-white" href="mailto:support@yax.com">support@yax.com</a>
+            </p>
+          </div>
+          <div class="column">
+            <div class="title is-6 has-text-white">Yax</div>
+            <p class="is-size-7 has-text-left">
+              Build a website for free with Yax.com, the do-it-yourself alternative to Wix and Squarespace. Own the code you create and take it anywhere, without vendor lock-in. Host it for free with a custom domain.
+            </p>
+            <p class="is-size-7 has-text-left-desktop">
+              Our tutorials help you create a high-quality free website.
+              <br> © 2020 Yax.com
+            </p>
+            <div>
+              <a class="has-text-white" target="blank" href="https://github.com/yaxdotcom">
+                <span class="icon">
+                          <i class="fa fa-github"></i>
+                        </span>
+              </a>
+              <a class="has-text-white" target="blank" href="https://twitter.com/danielkehoe">
+                <span class="icon">
+                          <i class="fa fa-twitter"></i>
+                        </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
