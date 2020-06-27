@@ -1,3 +1,5 @@
+// derived from https://github.com/GermanMtzmx/prism-markdown-element
+// thank you to German Martinez Solis
 
 import prismjs from 'https://jspm.dev/prismjs';
 import commonmark from 'https://jspm.dev/commonmark';
@@ -6,7 +8,7 @@ import { unsafeHTML } from 'https://jspm.dev/lit-html/directives/unsafe-html.js'
 
 const ALLOWED_THEMES = ['coy', 'dark', 'funky', 'okaidia','solarizedlight', 'tomorrow', 'twilight'];
 
-class PrismMarkdownElement extends LitElement {
+export class YaxMarkdown extends LitElement {
   static get properties() {
      return {
        mdsrc: String,
@@ -122,4 +124,4 @@ class PrismMarkdownElement extends LitElement {
       ${this.__markdownRendered}`
   }
 }
-customElements.define('prism-markdown-element', PrismMarkdownElement);
+customElements.define('yax-markdown', YaxMarkdown);
