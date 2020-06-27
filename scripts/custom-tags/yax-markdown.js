@@ -94,8 +94,8 @@ export class YaxMarkdown extends LitElement {
   * @return {Promise}
   */
   async fetchStyles({ customtheme, theme }) {
-   const theme_file = (ALLOWED_THEMES.includes(theme)) ? `prism-${theme}.css` : 'prism.css';
-   const resource = customtheme !== undefined ? customtheme : `../node_modules/prismjs/themes/${theme_file}`;
+   const theme_file = (ALLOWED_THEMES.includes(theme)) ? `prism-${theme}.min.css` : 'prism.min.css';
+   const resource = customtheme !== undefined ? customtheme : `https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/${theme_file}`;
    const fetchedStyles = await fetch(resource).then(async response => await response.text()).catch(e => '');
    return `<style>
     :host {
