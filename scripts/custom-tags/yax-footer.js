@@ -17,17 +17,17 @@ export class YaxFooter extends LitElement {
             <div>
               <a target="blank" href="https://github.com/yaxdotcom">
               <span class="icon  has-background-black">
-              <img src="/images/icons/github.jpg" alt="">
+              <img src="/assets-yax-com/images/icons/github.jpg" alt="">
               </span>
               </a>
               <a target="blank" href="https://twitter.com/rails_apps">
               <span class="icon">
-              <img src="/images/icons/twitter.svg" alt="">
+              <img src="/assets-yax-com/images/icons/twitter.svg" alt="">
               </span>
               </a>
               <a target="blank" href="https://www.facebook.com/daniel.kehoe.sf">
               <span class="icon">
-              <img src="/images/icons/facebook-f.svg" alt="">
+              <img src="/assets-yax-com/images/icons/facebook-f.svg" alt="">
               </span>
               </a>
             </div>
