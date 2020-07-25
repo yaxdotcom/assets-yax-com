@@ -6,7 +6,7 @@ export class YaxNavbar extends LitElement {
   }
   render(){
     return html`
-    <nav class="navbar is-transparent is-black is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-transparent is-black" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://yax.com/">
           <span class="icon is-large">
