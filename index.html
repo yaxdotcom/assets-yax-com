@@ -7,50 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yax Web Assets</title>
   <meta name="Description" content="A library of JavaScript, stylesheets, and images for the yax.com project.">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
   <script type="module" src="/scripts/yax-tags-library.js"></script>
 </head>
 
-<body>
-  <header>
-    <nav class="navbar is-transparent is-black">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-      Yax.com
-    </a>
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" target="blank" href="https://github.com/yaxdotcom">
-            <span class="icon">
-          <i class="fa fa-github"></i>
-        </span>
-          </a>
-          <a class="navbar-item" target="blank" href="https://twitter.com/danielkehoe">
-            <span class="icon">
-          <i class="fa fa-twitter"></i>
-        </span>
-          </a>
-        </div>
-        <span class="navbar-burger">
-        <span></span>
-        <span></span>
-        <span></span>
-        </span>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a itemprop="url" class="navbar-item has-text-white " href="/posts/"><span itemprop="name">Blog</span></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+<body class="has-navbar-fixed-top">
+<header>
+  <yax-navbar><yax-navbar>
+</header>
 <article class="message is-info is-small">
   <div class="message-body">
     The &lt;yax-navbar&gt; tag should display a navbar above.
@@ -60,8 +24,11 @@
     <section class="hero">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
+        <h1 class="title inverse">
           Yax Web Assets
+                      <span class="icon">
+              <img src="/images/icons/github.svg" alt="">
+            </span>
         </h1>
         <h2 class="subtitle">
           Demonstration Page
