@@ -34,7 +34,7 @@ export class YaxNavbar extends LitElement {
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navMenu" class="navbar-menu" style="background-color:inherit;">
+      <div id="navMenu" class="navbar-menu has-background-black">
         <div class="navbar-end">
           <div class="navbar-item">
             <a itemprop="url" class="navbar-item has-text-white" href="https://yax.com/posts/">
