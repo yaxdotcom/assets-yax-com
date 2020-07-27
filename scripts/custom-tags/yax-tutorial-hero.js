@@ -10,7 +10,7 @@ export class YaxTutorialHero extends LitElement {
   render() {
     return html`
     ${until(
-      fetch('./manifest.json')
+      fetch('manifest.json')
         .then(response => {
           if (!response.ok) {
             throw new Error('Could not find manifest file');
