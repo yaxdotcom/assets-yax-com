@@ -20,8 +20,12 @@ export class YaxTutorialHero extends LitElement {
         .then(tutorial => {
           let level_color = 'is-success'
           switch (tutorial.level) {
-            case 'advanced':
+            case 'intermediate':
               level_color = 'is-warning'
+              break
+            case 'advanced':
+              level_color = 'is-danger'
+              break
           }
           return html`
           <section class="hero has-background-white-ter">

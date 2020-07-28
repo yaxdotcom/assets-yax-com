@@ -1,5 +1,6 @@
 {
   "title": "Your First Custom HTML Tag",
+  "group": "basic",
   "audience": "developer",
   "level": "beginner",
   "topic": "web components",

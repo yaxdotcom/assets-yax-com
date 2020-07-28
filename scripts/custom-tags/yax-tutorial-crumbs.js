@@ -1,9 +1,9 @@
-// /scripts/custom-tags/yax-tutorial-toc.js file
+// /scripts/custom-tags/yax-tutorial-crumbs.js file
 
 import { LitElement, html } from 'https://jspm.dev/lit-element';
 import { until } from 'https://jspm.dev/lit-html/directives/until.js';
 
-export class YaxTutorialToc extends LitElement {
+export class YaxTutorialCrumbs extends LitElement {
   createRenderRoot() {
     return this;
   }
@@ -18,19 +18,15 @@ export class YaxTutorialToc extends LitElement {
           return response.json();
         })
         .then(tutorial => {
-          return tutorial.pages;
-        })
-        .then(pages => {
           return html`
-          <aside class="menu">
-            <p class="menu-label">
-              Tutorial contents
-            </p>
-            <ul class="menu-list">
-              <li><a href="index.html">${pages.shift()}</a></li>
-              ${pages.map((item, index) => html`<li><a href="${index + 1}.html">${item}</a></li>`)}
-            </ul>
-          </aside>
+            <nav class="breadcrumb">
+              <ul>
+                <li><a href="https://yax.com" style="padding-left: 0">Yax.com</a></li>
+                <li><a href="https://tutorials.yax.com">Tutorials</a></li>
+                <li class="is-active"><a>${tutorial.group.charAt(0).toUpperCase() + tutorial.group.slice(1)}</a></li>
+                <li class="is-active"><a>${tutorial.title}</a></li>
+              </ul>
+            </nav>
           `;
         })
         .catch(error => {
@@ -43,4 +39,4 @@ export class YaxTutorialToc extends LitElement {
   }
 }
 
-customElements.define('yax-tutorial-toc', YaxTutorialToc);
+customElements.define('yax-tutorial-crumbs', YaxTutorialCrumbs);
