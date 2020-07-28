@@ -3,5 +3,13 @@
   "audience": "developer",
   "level": "beginner",
   "topic": "web components",
-  "subtopic": "custom elements"
+  "subtopic": "custom elements",
+  "pages": [
+    "Introduction",
+    "One Page Demo",
+    "Create the Project",
+    "Add HTML",
+    "Add JavaScript",
+    "View in a Browser"
+  ]
 }
