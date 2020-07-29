@@ -1,7 +1,8 @@
 // /scripts/custom-tags/yax-tutorial-toc.js file
 
-import { LitElement, html } from 'https://jspm.dev/lit-element';
-import { until } from 'https://jspm.dev/lit-html/directives/until.js';
+import { LitElement } from 'https://cdn.skypack.dev/lit-element@2.3.1';
+import { html } from 'https://cdn.skypack.dev/lit-html@1.2.1';
+import { until } from 'https://cdn.skypack.dev/lit-html@1.2.1/directives/until.js';
 
 export class YaxTutorialToc extends LitElement {
   createRenderRoot() {
