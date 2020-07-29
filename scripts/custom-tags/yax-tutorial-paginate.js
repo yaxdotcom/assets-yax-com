@@ -31,16 +31,14 @@ export class YaxTutorialPaginate extends LitElement {
           <nav class="level">
             <div class="level-left">
               <div class="level-item">
-                ${mark == 0 ?
-                html`&nbsp;` :
-                html`<a href="${mark - 1}.html" class="button prev">≪ ${pages[mark -1]}</a>`}
+
               </div>
             </div>
             <div class="level-right">
               <div class="level-item">
               ${mark >= pages.length ?
                 html`&nbsp;` :
-                html`<a href="${mark + 1}.html" class="button next">${pages[mark +1]} ≫</a>`}
+                html`<a href="${mark + 1}.html" class="button next">${pages[mark + 1]} ≫</a>`}
               </div>
             </div>
           </nav>
