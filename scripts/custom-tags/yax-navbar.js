@@ -1,6 +1,6 @@
 // /scripts/custom-tags/yax-navbar.js file
-import { LitElement } from 'https://cdn.skypack.dev/lit-element@2.3.1';
-import { html } from 'https://cdn.skypack.dev/lit-html@1.2.1';
+import { LitElement } from 'https://jspm.dev/lit-element@2.3.1';
+import { html } from 'https://jspm.dev/lit-html@1.2.1';
 export class YaxNavbar extends LitElement {
   createRenderRoot() {
     return this;
@@ -11,22 +11,22 @@ export class YaxNavbar extends LitElement {
       <div class="navbar-brand">
         <a class="navbar-item" href="https://yax.com/">
           <span class="icon is-large">
-            <img src="https://assets.yax.com/assets/images/icons/yax.jpg" alt="">
+            <img src="https://assets.yax.com/images/icons/yax.jpg" alt="">
           </span>
         </a>
         <a class="navbar-item" target="blank" href="https://github.com/yaxdotcom">
             <span class="icon">
-              <img src="https://assets.yax.com/assets/images/icons/github.jpg" alt="">
+              <img src="https://assets.yax.com/images/icons/github.jpg" alt="">
             </span>
           </a>
           <a class="navbar-item" target="blank" href="https://twitter.com/rails_apps">
             <span class="icon">
-              <img src="https://assets.yax.com/assets/images/icons/twitter.svg" alt="">
+              <img src="https://assets.yax.com/images/icons/twitter.svg" alt="">
             </span>
           </a>
           <a class="navbar-item" target="blank" href="https://www.facebook.com/daniel.kehoe.sf">
             <span class="icon">
-              <img src="https://assets.yax.com/assets/images/icons/facebook-f.svg" alt="">
+              <img src="https://assets.yax.com/images/icons/facebook-f.svg" alt="">
             </span>
           </a>
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
