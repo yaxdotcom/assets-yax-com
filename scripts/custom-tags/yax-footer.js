@@ -44,8 +44,8 @@ export class YaxFooter extends LitElement {
             <h6 class="title is-6 has-text-white">Tutorials</h6>
             <p>Support the project <br>with a subscription <br>to our tutorials</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
-              <li><a href="#">basic</a></li>
-              <li><a href="#">advanced</a></li>
+              <li><a href="https://tutorials.yax.com/">basic</a></li>
+              <li><a href="https://tutorials.yax.com/">advanced</a></li>
             </ul>
           </div>
           <div class="column">
@@ -53,15 +53,13 @@ export class YaxFooter extends LitElement {
             <ul style="list-style-type: circle; list-style-position: inside;">
               <li><a href="#" onclick="$crisp.push(['do','chat:open'])">chat for questions</a></li>
               <li><a href="mailto:support@yax.com">support@yax.com</a></li>
+              <li><a href="https://blog.yax.com/">blog</a></li>
             </ul>
           </div>
         </div>
 
         <div class="columns">
           <div class="column">
-            <p class="subtitle is-7 has-text-white"><a href="#">Legal notices</a></p>
-          </div>
-          <div class="column has-text-right-tablet">
             <p class="subtitle is-7 has-text-white">© ${new Date().getFullYear()} Yax.com. All rights reserved.</p>
           </div>
         </div>
