@@ -25,18 +25,27 @@ export class YaxTutorialPaginate extends LitElement {
       if (Number.isNaN(mark)) {
         throw new Error('yax-tutorial-paginate tag fails unless filename is index or an integer');
       }
+      let previous, next = html`&nbsp;`;
+      // if mark == 0 then previous = html`&nbsp;`
+      // if mark >= pages.length then next = html`&nbsp;`
+      if (mark == 1) {
+        previous = html`<a href="index.html" class="button prev">≪ ${pages[mark - 1]}</a>`
+      } else if (mark > 1) {
+        previous = html`<a href="${mark - 1}.html" class="button prev">≪ ${pages[mark - 1]}</a>`
+      }
+      if (mark < pages.length) {
+        next = html`<a href="${mark + 1}.html" class="button next">${pages[mark + 1]} ≫</a>`
+      }
       return html`
       <nav class="level">
         <div class="level-left">
           <div class="level-item">
-
+          ${previous}
           </div>
         </div>
         <div class="level-right">
           <div class="level-item">
-          ${mark >= pages.length ?
-            html`&nbsp;` :
-            html`<a href="${mark + 1}.html" class="button next">${pages[mark + 1]} ≫</a>`}
+          ${next}
           </div>
         </div>
       </nav>
@@ -54,6 +63,5 @@ export class YaxTutorialPaginate extends LitElement {
     )
   }
 }
-
 
 customElements.define('yax-tutorial-paginate', YaxTutorialPaginate);
