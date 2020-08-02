@@ -20,6 +20,7 @@ export class YaxTutorialPaginate extends LitElement {
     })
     .then(pages => {
       let filename = window.location.href.split('/').pop().replace('.html', '');
+      if (filename == '') filename = 'index';
       let mark = 0;
       if(filename !== 'index') mark = parseInt(filename, 10);
       if (Number.isNaN(mark)) {
