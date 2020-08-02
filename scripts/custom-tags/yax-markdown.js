@@ -82,6 +82,9 @@ export class YaxMarkdown extends LitElement {
   * @return {Promise}
   */
   fetchMd(src) {
+    let filename = window.location.href.split('/').pop().replace('.html', '');
+    if (filename == '') filename = 'index';
+    if (src == '') src = filename + '.md';
     if (!src.includes('.md')) { return; }
     return fetch(src).then(res => res.text()).then(markdown => markdown);
   }
