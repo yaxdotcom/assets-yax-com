@@ -34,6 +34,7 @@ export class YaxTutorialPaginate extends LitElement {
       } else if (mark > 1) {
         previous = html`<a href="${mark - 1}.html" class="button prev">≪ ${pages[mark - 1]}</a>`
       }
+      console.log('pages.length = ' + pages.length)
       if (mark < pages.length) {
         next = html`<a href="${mark + 1}.html" class="button next">${pages[mark + 1]} ≫</a>`
       }
