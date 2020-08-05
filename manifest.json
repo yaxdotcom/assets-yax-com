@@ -1,5 +1,6 @@
 {
   "title": "Your First Custom HTML Tag",
+  "type": "article",
   "group": "basic",
   "audience": "developer",
   "level": "beginner",
@@ -12,5 +13,9 @@
     "Add HTML",
     "Add JavaScript",
     "View in a Browser"
+  ],
+  "articles": [
+   {"title": "Use a Git Submodule to Share a Web Assets Library", "url": "/articles/git-submodule-for-web-assets-library.html"},
+   {"title": "Second Article", "url": "/articles/second-artcile.html"}
   ]
 }

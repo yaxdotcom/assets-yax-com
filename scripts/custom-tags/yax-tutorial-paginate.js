@@ -16,7 +16,11 @@ export class YaxTutorialPaginate extends LitElement {
       return response.json();
     })
     .then(tutorial => {
-      return tutorial.pages;
+      if (tutorial.type == 'article') {
+        return Promise.reject(html`&nbsp;`);
+      } else {
+        return tutorial.pages;
+      }
     })
     .then(pages => {
       let filename = window.location.href.split('/').pop().replace('.html', '');
