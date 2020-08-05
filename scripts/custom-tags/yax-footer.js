@@ -34,8 +34,8 @@ export class YaxFooter extends LitElement {
             </div>
           </div>
           <div class="column">
-            <h3 class="title is-6 has-text-white">Templates</h3>
-            <p>See our growing collection of website templates</p>
+            <h3 class="title is-6 has-text-white">Sites</h3>
+            <p>See a demonstration of building a website using Yax.com</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
               <li><a href="#">preview</a></li>
             </ul>
