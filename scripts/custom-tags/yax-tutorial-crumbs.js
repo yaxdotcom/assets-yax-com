@@ -20,7 +20,7 @@ export class YaxTutorialCrumbs extends LitElement {
         <nav class="breadcrumb">
           <ul>
             <li><a href="https://yax.com" style="padding-left: 0">Yax.com</a></li>
-            <li><a href="https://tutorials.yax.com">Tutorials</a></li>
+            <li><a href="https://tutorials.yax.com/learn/index.html">Tutorials</a></li>
             <li class="is-active"><a>${tutorial.group.charAt(0).toUpperCase() + tutorial.group.slice(1)}</a></li>
             <li class="is-active"><a>${tutorial.title}</a></li>
           </ul>
