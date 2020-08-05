@@ -1,21 +1,13 @@
 {
-  "title": "Your First Custom HTML Tag",
-  "type": "article",
+  "title": "Your First Article",
+  "type": "tutorial",
   "group": "basic",
   "audience": "developer",
   "level": "beginner",
   "topic": "web components",
   "subtopic": "custom elements",
   "pages": [
-    "Introduction",
-    "One Page Demo",
-    "Create the Project",
-    "Add HTML",
-    "Add JavaScript",
-    "View in a Browser"
-  ],
-  "articles": [
-   {"title": "Use a Git Submodule to Share a Web Assets Library", "url": "/articles/git-submodule-for-web-assets-library.html"},
-   {"title": "Second Article", "url": "/articles/second-artcile.html"}
+   {"title": "Introduction", "url": "/articles/index.html"},
+   {"title": "Second Article", "url": "/articles/second-article.html"}
   ]
 }

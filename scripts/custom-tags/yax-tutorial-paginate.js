@@ -34,12 +34,12 @@ export class YaxTutorialPaginate extends LitElement {
       // if mark == 0 then previous = html`&nbsp;`
       // if mark >= pages.length then next = html`&nbsp;`
       if (mark == 1) {
-        previous = html`<a href="index.html" class="button prev">≪ ${pages[mark - 1]}</a>`
+        previous = html`<a href="index.html" class="button prev">≪ ${pages[mark - 1].title}</a>`
       } else if (mark > 1) {
-        previous = html`<a href="${mark - 1}.html" class="button prev">≪ ${pages[mark - 1]}</a>`
+        previous = html`<a href="${mark - 1}.html" class="button prev">≪ ${pages[mark - 1].title}</a>`
       }
       if (mark < (pages.length - 1)) {
-        next = html`<a href="${mark + 1}.html" class="button next">${pages[mark + 1]} ≫</a>`
+        next = html`<a href="${mark + 1}.html" class="button next">${pages[mark + 1].title} ≫</a>`
       }
       return html`
       <nav class="level">
