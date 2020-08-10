@@ -1,4 +1,4 @@
-// /scripts/custom-tags/yax-tutorial-toc.js file
+// /scripts/custom-tags/yax-articles-list.js file
 
 import { LitElement, html } from 'https://jspm.dev/lit-element@2.3.1';
 import { until } from 'https://jspm.dev/lit-html@1.2.1/directives/until.js';
@@ -23,12 +23,12 @@ export class YaxArticlesList extends LitElement {
     .then(pages => {
       let list_item = '';
       for (const [key, value] of Object.entries(pages)) {
-        list_item += '<p><a href="';
+        list_item += '<span><a href="';
         list_item += value.url;
         list_item += '">';
         list_item += value.title;
-        list_item += '</a></p>';
-        list_item += '\n'
+        list_item += '</a></span>';
+        list_item += '<br>\n'
       }
       return html`
       <div>
