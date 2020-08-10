@@ -6,6 +6,7 @@ import { YaxTutorialHero } from './custom-tags/yax-tutorial-hero.js';
 import { YaxTutorialToc } from './custom-tags/yax-tutorial-toc.js';
 import { YaxTutorialCrumbs } from './custom-tags/yax-tutorial-crumbs.js';
 import { YaxTutorialPaginate } from './custom-tags/yax-tutorial-paginate.js';
+import { YaxArticlesList } from './custom-tags/yax-articles-list.js';
 const YaxTags = {
   YaxMarkdown,
   YaxFooter,
@@ -13,7 +14,8 @@ const YaxTags = {
   YaxTutorialHero,
   YaxTutorialToc,
   YaxTutorialCrumbs,
-  YaxTutorialPaginate
+  YaxTutorialPaginate,
+  YaxArticlesList
 }
 
 export { YaxTags }

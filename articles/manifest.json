@@ -1,0 +1,13 @@
+{
+  "title": "Articles",
+  "type": "article",
+  "group": "free",
+  "pages": [
+    {"title": "Overview", "url": "/articles/index.html"},
+    {"title": "How to Create a GitHub Account", "url": "/articles/create-github-account.html"},
+    {"title": "Website Hosting with Vercel", "url": "/articles/website-hosting-with-vercel.html"},
+    {"title": "Custom Domains with Vercel", "url": "/articles/custom-domains-with-vercel.html"},
+    {"title": "Subdomains with Vercel", "url": "/articles/subdomains-with-vercel.html"},
+    {"title": "Use a Git Submodule to Share an Assets Library", "url": "/articles/git-submodule-for-web-assets-library.html"}
+  ]
+}
