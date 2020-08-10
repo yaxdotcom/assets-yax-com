@@ -2,6 +2,7 @@
 
 import { LitElement, html } from 'https://jspm.dev/lit-element@2.3.1';
 import { until } from 'https://jspm.dev/lit-html@1.2.1/directives/until.js';
+import { unsafeHTML } from 'https://jspm.dev/lit-html@1.2.1/directives/unsafe-html.js';
 
 export class YaxTutorialHero extends LitElement {
   createRenderRoot() {
@@ -25,6 +26,47 @@ export class YaxTutorialHero extends LitElement {
           level_color = 'is-danger'
           break
       }
+      let tags = '';
+      if(tutorial.audience != null){
+        tags += `
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">audience</span>
+              <span class="tag is-info">${tutorial.audience}</span>
+            </div>
+          </div>
+        `;
+      }
+      if(tutorial.level != null){
+        tags += `
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">level</span>
+              <span class="tag ${level_color}">${tutorial.level}</span>
+            </div>
+          </div>
+        `;
+      }
+      if(tutorial.topic != null){
+        tags += `
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">topic</span>
+              <span class="tag is-primary">${tutorial.topic}</span>
+            </div>
+          </div>
+        `;
+      }
+      if(tutorial.subtopic != null){
+        tags += `
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-dark">subtopic</span>
+              <span class="tag is-primary">${tutorial.subtopic}</span>
+            </div>
+          </div>
+        `;
+      }
       return html`
       <section class="hero has-background-white-ter">
         <div class="hero-body">
@@ -32,33 +74,7 @@ export class YaxTutorialHero extends LitElement {
             <h1 class="title">${tutorial.title}</h1>
           </div>
           <div class="field is-grouped is-grouped-multiline is-grouped-centered mt-5">
-            <div class="control">
-              <div class="tags has-addons">
-                <span class="tag is-dark">audience</span>
-                <span class="tag is-info">${tutorial.audience}</span>
-              </div>
-            </div>
-
-            <div class="control">
-              <div class="tags has-addons">
-                <span class="tag is-dark">level</span>
-                <span class="tag ${level_color}">${tutorial.level}</span>
-              </div>
-            </div>
-
-            <div class="control">
-              <div class="tags has-addons">
-                <span class="tag is-dark">topic</span>
-                <span class="tag is-primary">${tutorial.topic}</span>
-              </div>
-            </div>
-
-            <div class="control">
-              <div class="tags has-addons">
-                <span class="tag is-dark">subtopic</span>
-                <span class="tag is-primary">${tutorial.subtopic}</span>
-              </div>
-            </div>
+            ${unsafeHTML(tags)}
           </div>
         </div>
       </section>
