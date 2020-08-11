@@ -1,7 +1,6 @@
 {
   "title": "Articles",
   "type": "article",
-  "group": "free",
   "pages": [
     {"title": "Overview", "url": "/articles/index.html"},
     {"title": "How to Create a GitHub Account", "url": "/articles/create-github-account.html"},

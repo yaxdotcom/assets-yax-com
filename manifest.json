@@ -1,7 +1,8 @@
 {
   "title": "Your First Article",
+  "pubdate": "2020-08-11",
   "type": "tutorial",
-  "group": "basic",
+  "subscribers": "patron",
   "audience": "developer",
   "level": "beginner",
   "topic": "web components",

@@ -2,6 +2,7 @@
 
 import { LitElement, html } from 'https://jspm.dev/lit-element@2.3.1';
 import { until } from 'https://jspm.dev/lit-html@1.2.1/directives/until.js';
+import { unsafeHTML } from 'https://jspm.dev/lit-html@1.2.1/directives/unsafe-html.js';
 
 export class YaxTutorialCrumbs extends LitElement {
   createRenderRoot() {
@@ -16,15 +17,38 @@ export class YaxTutorialCrumbs extends LitElement {
       return response.json();
     })
     .then(tutorial => {
-      return html`
+      let crumbs = '';
+      crumbs += `
         <nav class="breadcrumb">
-          <ul>
-            <li><a href="https://yax.com" style="padding-left: 0">Yax.com</a></li>
-            <li><a href="https://tutorials.yax.com/learn/index.html">Tutorials</a></li>
-            <li class="is-active"><a>${tutorial.group.charAt(0).toUpperCase() + tutorial.group.slice(1)}</a></li>
-            <li class="is-active"><a>${tutorial.title}</a></li>
-          </ul>
+        <ul>
+          <li><a href="https://yax.com" style="padding-left: 0">Yax.com</a></li>
+          <li><a href="/learn/index.html">Tutorials</a></li>
+      `;
+      if(tutorial.title != null){
+        crumbs += `
+          <li class="is-active">&nbsp;${tutorial.title}&nbsp;</li>
+        `;
+      }
+      if(tutorial.subscribers != null){
+        crumbs += `
+        <li class="is-active is-italic">&nbsp;for&nbsp;<span class="is-capitalized">${tutorial.subscribers}</span>&nbsp;subscribers</li>
+        `;
+      }
+      crumbs += `
+        </ul>
+      `;
+      if(tutorial.pubdate != null){
+        let date = new Date(tutorial.pubdate );
+        console.log(date);
+        crumbs += `
+          <span class="is-size-7 is-italic">Published ${date.toDateString()}</span>
+        `;
+      }
+      crumbs += `
         </nav>
+      `;
+      return html`
+        ${unsafeHTML(crumbs)}
       `;
     })
     .catch(error => {
