@@ -29,11 +29,6 @@ export class YaxTutorialCrumbs extends LitElement {
           <li class="is-active">&nbsp;${tutorial.title}&nbsp;</li>
         `;
       }
-      if(tutorial.subscribers != null){
-        crumbs += `
-        <li class="is-active is-italic">&nbsp;for&nbsp;<span class="is-capitalized">${tutorial.subscribers}</span>&nbsp;subscribers</li>
-        `;
-      }
       crumbs += `
         </ul>
       `;
