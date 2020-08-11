@@ -26,7 +26,7 @@ export class YaxTutorialCrumbs extends LitElement {
       `;
       if(tutorial.title != null){
         crumbs += `
-          <li class="is-active">&nbsp;${tutorial.title}&nbsp;</li>
+          <li class="is-active"><a>${tutorial.title}</a></li>
         `;
       }
       crumbs += `
