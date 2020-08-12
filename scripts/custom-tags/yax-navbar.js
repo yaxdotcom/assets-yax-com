@@ -37,7 +37,11 @@ export class YaxNavbar extends LitElement {
       </div>
       <div id="navMenu" class="navbar-menu has-background-black">
         <div class="navbar-end">
-        <div class="navbar-item has-text-weight-bold">
+          <div class="navbar-item has-text-weight-bold">
+            <a itemprop="url" class="navbar-item has-text-white" href="https://try.yax.com/">
+              <span itemprop="name">Try Yax</span></a>
+          </div>
+          <div class="navbar-item has-text-weight-bold">
             <a itemprop="url" class="navbar-item has-text-white" href="https://tutorials.yax.com/">
               <span itemprop="name">Tutorials</span></a>
           </div>

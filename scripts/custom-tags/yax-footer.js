@@ -35,14 +35,14 @@ export class YaxFooter extends LitElement {
           </div>
           <div class="column">
             <h3 class="title is-6 has-text-white">Get a Site</h3>
-            <p>See how to build a website using Yax.com</p>
+            <p>Build a website using Yax.com</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
-              <li><a href="#">demo/preview</a></li>
+              <li><a href="https://try.yax.com/">try Yax</a></li>
             </ul>
           </div>
           <div class="column">
             <h6 class="title is-6 has-text-white">Tutorials</h6>
-            <p>Learn more. And support the project <br>with a subscription <br>to our tutorials</p>
+            <p>Learn more. And <br>support the project  <br>with a subscription <br>to our tutorials</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
               <li><a href="https://tutorials.yax.com/">free</a></li>
               <li><a href="https://tutorials.yax.com/">Patron</a></li>
