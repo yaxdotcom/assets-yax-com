@@ -34,24 +34,25 @@ export class YaxFooter extends LitElement {
             </div>
           </div>
           <div class="column">
-            <h3 class="title is-6 has-text-white">Sites</h3>
-            <p>See a demonstration of building a website using Yax.com</p>
+            <h3 class="title is-6 has-text-white">Get a Site</h3>
+            <p>See how to build a website using Yax.com</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
-              <li><a href="#">preview</a></li>
+              <li><a href="#">demo/preview</a></li>
             </ul>
           </div>
           <div class="column">
             <h6 class="title is-6 has-text-white">Tutorials</h6>
-            <p>Support the project <br>with a subscription <br>to our tutorials</p>
+            <p>Learn more. And support the project <br>with a subscription <br>to our tutorials</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
-              <li><a href="https://tutorials.yax.com/">basic</a></li>
-              <li><a href="https://tutorials.yax.com/">advanced</a></li>
+              <li><a href="https://tutorials.yax.com/">free</a></li>
+              <li><a href="https://tutorials.yax.com/">Patron</a></li>
+              <li><a href="https://tutorials.yax.com/">Premier</a></li>
             </ul>
           </div>
           <div class="column">
-            <h6 class="title is-6 has-text-white">Support</h6>
+            <h6 class="title is-6 has-text-white">Resources</h6>
             <ul style="list-style-type: circle; list-style-position: inside;">
-              <li><a href="#" onclick="$crisp.push(['do','chat:open'])">chat for questions</a></li>
+              <li><a href="#" onclick="$crisp.push(['do','chat:open'])">chat</a></li>
               <li><a href="mailto:support@yax.com">support@yax.com</a></li>
               <li><a href="https://blog.yax.com/">blog</a></li>
             </ul>
