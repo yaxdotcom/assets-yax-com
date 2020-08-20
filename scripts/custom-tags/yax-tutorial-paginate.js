@@ -1,7 +1,7 @@
 // /scripts/custom-tags/yax-tutorial-paginate.js file
 
-import { LitElement, html } from 'https://jspm.dev/lit-element@2.3.1';
-import { until } from 'https://jspm.dev/lit-html@1.2.1/directives/until.js';
+import { LitElement, html } from 'https://jspm.dev/lit-element@2.4.0';
+import { until } from 'https://jspm.dev/lit-html@1.3.0/directives/until.js';
 
 export class YaxTutorialPaginate extends LitElement {
   createRenderRoot() {
