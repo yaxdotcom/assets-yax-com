@@ -1,8 +1,8 @@
 // /scripts/custom-tags/yax-articles-list.js file
 
-import { LitElement, html } from 'https://jspm.dev/lit-element@2.4.0';
-import { until } from 'https://jspm.dev/lit-html@1.3.0/directives/until.js';
-import { unsafeHTML } from 'https://jspm.dev/lit-html@1.3.0/directives/unsafe-html.js';
+import { LitElement, html } from 'https://jspm.dev/lit-element@2.3.1';
+import { until } from 'https://jspm.dev/lit-html@1/directives/until.js';
+import { unsafeHTML } from 'https://jspm.dev/lit-html@1/directives/unsafe-html.js';
 
 export class YaxArticlesList extends LitElement {
   createRenderRoot() {
