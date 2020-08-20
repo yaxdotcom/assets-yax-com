@@ -1,5 +1,5 @@
 // /scripts/custom-tags/yax-navbar.js file
-import { LitElement, html } from 'https://jspm.dev/lit-element@2.3.1';
+import { LitElement, html } from 'https://jspm.dev/lit-element@2.4.0';
 
 export class YaxNavbar extends LitElement {
   createRenderRoot() {

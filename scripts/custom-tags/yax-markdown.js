@@ -3,7 +3,7 @@
 
 import prismjs from 'https://jspm.dev/prismjs';
 import commonmark from 'https://jspm.dev/commonmark';
-import { LitElement, html } from 'https://jspm.dev/lit-element@2.3.1';
+import { LitElement, html } from 'https://jspm.dev/lit-element@2.4.0';
 import { unsafeHTML } from 'https://jspm.dev/lit-html@1/directives/unsafe-html.js';
 
 const ALLOWED_THEMES = ['coy', 'dark', 'funky', 'okaidia','solarizedlight', 'tomorrow', 'twilight'];
