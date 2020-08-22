@@ -1,5 +1,5 @@
 // /scripts/custom-tags/yax-footer.js file
-import { LitElement, html } from 'https://jspm.dev/lit-element@2.4.0';
+import { LitElement, html } from 'https://jspm.dev/lit-element';
 
 export class YaxFooter extends LitElement {
   createRenderRoot() {
