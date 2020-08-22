@@ -33,8 +33,7 @@ export class YaxTutorialCrumbs extends LitElement {
         </ul>
       `;
       if(tutorial.pubdate != null){
-        let date = new Date(tutorial.pubdate );
-        console.log(date);
+        let date = new Date(tutorial.pubdate);
         crumbs += `
           <span class="is-size-7 is-italic">Published ${date.toDateString()}</span>
         `;
