@@ -105,6 +105,16 @@ export class YaxMarkdown extends LitElement {
       display: block;
     }
     ${fetchedStyles}
+    code {
+      background-color: #e6ffed;
+      font-size: 0.9rem;
+    }
+    code::before {
+      content: '\\2006';
+    }
+    code::after {
+      content: '\\2006';
+    }
     </style>`;
   }
   /**

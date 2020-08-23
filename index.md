@@ -4,7 +4,7 @@ Reading from the _index.md_ file.
 
 ## Demo Page
 
-The project contains a demo page **index.html** for testing assets and web components.
+The project contains a demo page `index.html` for testing assets and web components.
 
 Run a local web server to view the page. This works on macOS with the Python standard library:
 
