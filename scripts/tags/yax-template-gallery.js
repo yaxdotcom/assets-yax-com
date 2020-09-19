@@ -68,11 +68,14 @@ export class YaxTemplateGallery extends LitElement {
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
       <style>
         .swiper-container {
-          margin-bottom:2rem;
+          margin-bottom: 2rem;
+        }
+        .swiper-wrapper {
+          height: 532px;
         }
         .swiper-slide {
-          padding-top:2rem;
-          padding-bottom:2rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
           -webkit-transition: 250ms all;
           transition: 250ms all;
         }
