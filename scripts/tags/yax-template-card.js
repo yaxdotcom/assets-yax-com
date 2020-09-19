@@ -8,8 +8,8 @@ export class YaxTemplateCard extends LitElement {
     this.author = 'Yax team';
     this.template_title = 'Coming Soon';
     this.description = 'New template in development.';
-    this.template_img = '/assets/images/yax-template-demo.png';
-    this.author_img = '/assets/images/danielkehoe.jpg';
+    this.template_img = 'https://assets.yax.com/images/templates/yax-template-new.png';
+    this.author_img = 'https://assets.yax.com/images/icons/yax.jpg';
   }
 
   static get properties() {
