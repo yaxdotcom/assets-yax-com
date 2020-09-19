@@ -1,5 +1,3 @@
-// /scripts/custom-tags/yax-tutorial-crumbs.js file
-
 import { LitElement, html } from 'https://jspm.dev/lit-element@2';
 import { until } from 'https://jspm.dev/lit-html@1/directives/until.js';
 import { unsafeHTML } from 'https://jspm.dev/lit-html@1/directives/unsafe-html.js';

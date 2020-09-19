@@ -1,4 +1,3 @@
-// /scripts/custom-tags/yax-footer.js file
 import { LitElement, html } from 'https://jspm.dev/lit-element@2';
 
 export class YaxFooter extends LitElement {

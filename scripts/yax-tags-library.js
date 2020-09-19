@@ -1,12 +1,12 @@
-// library of Yax HTML custom tags
-import { YaxMarkdown } from './custom-tags/yax-markdown.js';
-import { YaxFooter } from './custom-tags/yax-footer.js';
-import { YaxNavbar } from './custom-tags/yax-navbar.js';
-import { YaxTutorialHero } from './custom-tags/yax-tutorial-hero.js';
-import { YaxTutorialToc } from './custom-tags/yax-tutorial-toc.js';
-import { YaxTutorialCrumbs } from './custom-tags/yax-tutorial-crumbs.js';
-import { YaxTutorialPaginate } from './custom-tags/yax-tutorial-paginate.js';
-import { YaxArticlesList } from './custom-tags/yax-articles-list.js';
+// tags-library of Yax HTML custom tags
+import { YaxMarkdown } from './tags-library/yax-markdown.js';
+import { YaxFooter } from './tags-library/yax-footer.js';
+import { YaxNavbar } from './tags-library/yax-navbar.js';
+import { YaxTutorialHero } from './tags-library/yax-tutorial-hero.js';
+import { YaxTutorialToc } from './tags-library/yax-tutorial-toc.js';
+import { YaxTutorialCrumbs } from './tags-library/yax-tutorial-crumbs.js';
+import { YaxTutorialPaginate } from './tags-library/yax-tutorial-paginate.js';
+import { YaxArticlesList } from './tags-library/yax-articles-list.js';
 const YaxTags = {
   YaxMarkdown,
   YaxFooter,

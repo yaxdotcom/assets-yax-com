@@ -1,4 +1,4 @@
-// /scripts/custom-tags/yax-tutorial-hero.js file
+// /scripts//yax-tutorial-hero.js file
 
 import { LitElement, html } from 'https://jspm.dev/lit-element@2';
 import { until } from 'https://jspm.dev/lit-html@1/directives/until.js';

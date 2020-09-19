@@ -1,4 +1,3 @@
-// /scripts/custom-tags/yax-navbar.js file
 import { LitElement, html } from 'https://jspm.dev/lit-element@2';
 
 export class YaxNavbar extends LitElement {
