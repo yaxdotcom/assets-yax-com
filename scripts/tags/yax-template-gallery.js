@@ -50,7 +50,6 @@ export class YaxTemplateGallery extends LitElement {
           spaceBetween: 10
         }
       },
-      autoHeight: true,
       watchOverflow: true,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -69,9 +68,6 @@ export class YaxTemplateGallery extends LitElement {
       <style>
         .swiper-container {
           margin-bottom: 2rem;
-        }
-        .swiper-wrapper {
-          height: 532px;
         }
         .swiper-slide {
           padding-top: 2rem;
