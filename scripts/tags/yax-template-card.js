@@ -5,7 +5,7 @@ export class YaxTemplateCard extends LitElement {
   constructor() {
     super();
     this.template_id = 'yax-template-new';
-    this.author = 'Yax team';
+    this.author = 'the Yax team';
     this.template_title = 'Coming Soon';
     this.description = 'New template in development.';
     this.template_img = 'https://assets.yax.com/images/templates/yax-template-new.png';
