@@ -37,6 +37,8 @@ export class YaxFooter extends LitElement {
             <p>Build a website using Yax.com</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
               <li><a href="https://try.yax.com/">try Yax</a></li>
+              <li><a href="https://sites.yax.com/">tiny sites</a></li>
+              <li><a href="https://sites.yax.com/">designer showcase</a></li>
             </ul>
           </div>
           <div class="column">
