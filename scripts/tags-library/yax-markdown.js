@@ -115,6 +115,12 @@ export class YaxMarkdown extends LitElement {
     code::after {
       content: '\\2006';
     }
+    img + em {
+        font-style: italic;
+        display: inherit;
+        text-align: center;
+        font-size: 0.7rem;
+    }
     </style>`;
   }
   /**
