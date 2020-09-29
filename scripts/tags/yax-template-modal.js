@@ -87,7 +87,7 @@ export class YaxTemplateModal extends LitElement {
           <div class="card">
             <div class="card-image">
               <figure class="image is-4by3">
-                <img id="templateImage" src="https://assets.yax.com/images/templates/yax-template-new.png" alt="Yax template">
+                <img id="templateImage" src="https://assets.yax.com/images/templates/yaxt-new.png" alt="Yax template">
               </figure>
             </div>
             <div class="card-content">
@@ -95,7 +95,7 @@ export class YaxTemplateModal extends LitElement {
               <form id="github-oauth" class="form-horizontal" action="#" method="POST">
 
                 <!-- Template ID-->
-                <input type="hidden" id="templateId" name="templateId" value="yax-template-demo">
+                <input type="hidden" id="templateId" name="templateId" value="yaxt-demo">
 
                 <fieldset>
 

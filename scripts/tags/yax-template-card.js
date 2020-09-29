@@ -4,11 +4,11 @@ export class YaxTemplateCard extends LitElement {
 
   constructor() {
     super();
-    this.template_id = 'yax-template-new';
+    this.template_id = 'yaxt-new';
     this.author = 'the Yax team';
     this.template_title = 'Coming Soon';
     this.description = 'New template in development.';
-    this.template_img = 'https://assets.yax.com/images/templates/yax-template-new.png';
+    this.template_img = 'https://assets.yax.com/images/templates/yaxt-new.png';
     this.author_img = 'https://assets.yax.com/images/icons/yax.jpg';
   }
 
