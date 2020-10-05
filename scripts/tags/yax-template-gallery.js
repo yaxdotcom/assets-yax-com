@@ -13,9 +13,9 @@ async function fetchData(category) {
   const response = await client.query(
     q.Map(
       q.Paginate(
-          q.Match(q.Index("templates_by_category"), category)
+          q.Match(q.Index('templates_sort_by_rank'), category)
         ),
-      q.Lambda(x => q.Get(x))
+      q.Lambda(['rank', 'ref'], q.Get(q.Var('ref')))
     )
   );
   return await response.data;
