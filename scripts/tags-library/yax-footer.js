@@ -36,16 +36,17 @@ export class YaxFooter extends LitElement {
             <h3 class="title is-6 has-text-white">Get a Site</h3>
             <p>Build a website using Yax.com</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
-              <li><a href="https://try.yax.com/">try Yax</a></li>
-              <li><a href="https://sites.yax.com/">tiny sites</a></li>
-              <li><a href="https://sites.yax.com/">designer showcase</a></li>
+              <li><a href="https://try.yax.com/">Try Yax</a></li>
+              <li><a href="https://sites.yax.com/#tiny_sites">Tiny Sites</a></li>
+              <li><a href="https://sites.yax.com/#framework_forest">Framework Forest</a></li>
+              <li><a href="https://sites.yax.com/#designer_showcase">Designer Showcase</a></li>
             </ul>
           </div>
           <div class="column">
             <h6 class="title is-6 has-text-white">Tutorials</h6>
             <p>Learn more. And <br>support the project  <br>with a subscription <br>to our tutorials</p>
             <ul style="list-style-type: circle; list-style-position: inside;">
-              <li><a href="https://tutorials.yax.com/">free</a></li>
+              <li><a href="https://tutorials.yax.com/">Free</a></li>
               <li><a href="https://tutorials.yax.com/">Patron</a></li>
               <li><a href="https://tutorials.yax.com/">Premier</a></li>
             </ul>
@@ -55,7 +56,8 @@ export class YaxFooter extends LitElement {
             <ul style="list-style-type: circle; list-style-position: inside;">
               <li><a href="#" onclick="$crisp.push(['do','chat:open'])">chat</a></li>
               <li><a href="mailto:support@yax.com">support@yax.com</a></li>
-              <li><a href="https://blog.yax.com/">blog</a></li>
+              <li><a href="https://blog.yax.com/">Blog</a></li>
+              <li><a href="https://yax.com/pricing.html">Comparison</a></li>
             </ul>
           </div>
         </div>
