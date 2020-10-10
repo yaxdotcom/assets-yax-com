@@ -85,11 +85,6 @@ export class YaxTemplateModal extends LitElement {
         <div class="modal-background"></div>
         <div class="modal-content is-tiny">
           <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img id="templateImage" src="https://assets.yax.com/images/templates/yaxt-new.png" alt="Yax template">
-              </figure>
-            </div>
             <div class="card-content">
 
               <form id="github-oauth" class="form-horizontal" action="#" method="POST">
@@ -145,7 +140,7 @@ export class YaxTemplateModal extends LitElement {
                   <div class="field">
                     <label class="label" for="deploybutton"></label>
                     <div class="control">
-                      <button @click="${e => this._beginDeploy(e)}" id="deploy-button" name="deploy-button" class="button is-info" style="display:block">Deploy Now</button>
+                      <button @click="${e => this._beginDeploy(e)}" id="deploy-button" name="deploy-button" class="button is-link" style="display:block">Deploy Now</button>
                       <div class="confirmable" style="display:none">
                         <a @click="${e => this._deploy(e)}" id="confirm-button" name="confirm-button" class="button is-success" href="#">Confirm</a>
                       </div>
@@ -161,6 +156,11 @@ export class YaxTemplateModal extends LitElement {
                 </fieldset>
               </form>
 
+              <div class="card-image">
+                <figure class="image" style="min-height:446px;">
+                  <img id="templateImage" src="https://assets.yax.com/images/templates/yaxt-new.png" alt="Yax template">
+                </figure>
+              </div>
             </div>
           </div>
         </div>
