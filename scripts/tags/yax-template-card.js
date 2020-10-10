@@ -35,9 +35,9 @@ export class YaxTemplateCard extends LitElement {
 
   render() {
     return html`
-      <div class="card is-shady" style="max-width:368px;">
+      <div class="card is-shady" style="max-width:368px; min-height:313px;">
         <div class="card-image">
-          <figure class="image" style="max-width:368px; min-height:446px;">
+          <figure class="image" style="max-width:368px; min-height:313px;">
             <img src="${this.template_img}" alt="">
           </figure>
         </div>
