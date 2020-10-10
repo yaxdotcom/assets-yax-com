@@ -32,7 +32,12 @@ export class YaxTemplateModal extends LitElement {
       if (!('URLSearchParams' in window)) {
         alert('Your browser does not support JavaScript URLSearchParams. Please use a newer browser.');
       } else {
-        this._confirm(data);
+        if (data['repository']) {
+          this._confirm(data);
+        } else {
+          console.log("null for data['repository']");
+          this._missing();
+        }
       }
   }
 
@@ -47,6 +52,14 @@ export class YaxTemplateModal extends LitElement {
       confirmable[i].style.display = 'block';
     }
   }
+
+  _missing() {
+      // display an error message if there is no repo name
+      const missing_repo = document.getElementsByClassName('missing_repo');
+      for (var i = 0; i < missing_repo.length; i ++) {
+        missing_repo[i].style.display = 'block';
+      }
+    }
 
   // reset form after 'reset form' link is clicked
   _reset(event) {
@@ -111,6 +124,9 @@ export class YaxTemplateModal extends LitElement {
 
                   <!-- Text input-->
                   <div class="field">
+                    <div class="missing_repo" style="display:none">
+                      <p class="help is-danger">You must provide a project name.</p>
+                    </div>
                     <label class="label" for="repository">Project name</label>
                     <div class="control">
                       <input id="repository" name="repository" type="text" placeholder="my-website" class="input is-small" required="">
@@ -153,7 +169,6 @@ export class YaxTemplateModal extends LitElement {
                       <p class="help">Click "Confirm" or <a @click="${e => this._reset(e)}" href="#" id="reset-link">reset form</a>. Yax will create a website from this template, storing the files in your GitHub account in a repository named <span id="repo-name">repo</span>. We won't access any user information or request your email address; you'll only grant permission to create a repo.</p>
                     </div>
                   </div>
-                </fieldset>
               </form>
 
               <div class="card-image">
