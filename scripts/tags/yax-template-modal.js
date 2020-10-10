@@ -81,7 +81,7 @@ export class YaxTemplateModal extends LitElement {
 
   render() {
     return html`
-      <div id="modal-card" class="modal modal-fx-3dSlit">
+      <div id="modal-card" class="modal modal-fx-normal">
         <div class="modal-background"></div>
         <div class="modal-content is-tiny">
           <div class="card">
