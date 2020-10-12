@@ -36,7 +36,7 @@ export class YaxTemplateCard extends LitElement {
 
   _authorName() {
     let name = '';
-    if (this.author !== null && this.author !== '') {
+    if (this.author !== null && this.author !== '' && this.author !== 'undefined') {
       name = this.author
     } else {
       name = 'the Yax team';
@@ -46,7 +46,7 @@ export class YaxTemplateCard extends LitElement {
 
   _authorImage() {
     let image = '';
-    if (this.author_img !== null && this.author_img !== '') {
+    if (this.author_img !== null && this.author_img !== '' && this.author_img !== 'undefined') {
       image = '<img src="';
       image += this.author_img;
       image += '" alt="">';
