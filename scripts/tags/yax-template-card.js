@@ -75,7 +75,7 @@ export class YaxTemplateCard extends LitElement {
             <div class="card-footer-item" style="border-right:0;">
               <span class="button is-link" @click="${this._showModal}">Select</span>
             </div>
-            <div class="card-footer-item" style="display: block; text-align: center;">
+            <div class="card-footer-item is-hidden-mobile" style="display: block; text-align: center;">
               <figure class="image is-48x48" style="margin-left: auto; margin-right: auto;">
                 ${unsafeHTML(this._authorImage())}
               </figure>
