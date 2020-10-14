@@ -99,7 +99,7 @@ export class YaxTemplateModal extends LitElement {
         <div class="modal-content is-tiny">
           <div class="card">
             <div class="card-content">
-
+              <button class="modal-button-close delete is-pulled-right" aria-label="close"></button>
               <form id="github-oauth" class="form-horizontal" action="#" method="POST">
 
                 <!-- Template ID-->
