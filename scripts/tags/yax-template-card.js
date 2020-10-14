@@ -29,6 +29,7 @@ export class YaxTemplateCard extends LitElement {
   }
 
   _showModal(e) {
+    analytics.track('Template Selected', { template: this.template_id });
     document.getElementById('modal-card').classList.add('is-active');
     document.getElementById('templateId').value = this.template_id;
     document.getElementById('templateImage').src = this.template_img;
