@@ -50,20 +50,6 @@ export class YaxAuthorKehoe extends LitElement {
           font-size: 92%;
           color: #999;
         }
-        .card .action {
-          padding-top: 20px;
-        }
-        .card .action .button {
-          padding: 16px 20px 16px 20px;
-          background: #e3efee;
-          border-color: #e3efee;
-          color: white;
-          border-radius: 100px;
-          transition: opacity 0.3s;
-        }
-        .card .action .button:hover {
-          opacity: 0.7;
-        }
       </style>
       <aside>
       	<div class="card">
