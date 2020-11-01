@@ -36,57 +36,56 @@ export class YaxTutorialToc extends LitElement {
 					list_item += '\n';
 				}
 				return html`
-      <style>
-        .card {
-          border-radius: 6px;
-          overflow: hidden;
-          max-width: 300px;
-          max-height: 380px;
-          margin: 0 auto;
-        }
-        .card .header {
-          height: 60px;
-          background: #e3efee;
-        }
-        .card .header .avatar {
-          width: 80px;
-          height: 100%;
-          position: relative;
-          margin: 0 auto;
-        }
-        .card .header .avatar img {
-          display: block;
-          border-radius: 50%;
-          position: absolute;
-          bottom: -42px;
-          border: 4px solid white;
-        }
-        .card .card-body {
-          padding: 30px;
-        }
-        .card .card-body .toc-headline {
-          font-size: 90%;
-          color: #8fada9;
-        }
-        .card .toc-list {
-          padding-top: 8px;
-          font-size: 92%;
-          color: #999;
-        }
-      </style>
-      <aside class="mt-6">
-        <div class="card">
-          <div class="header"></div>
-          <div class="card-body">
-            <h5 class="toc-headline">${heading}</h5>
-            <div class="toc-list is-size-7">
-              <ul class="menu-list">
-              ${unsafeHTML(list_item)}
-            </ul>
+          <style>
+            .card-toc {
+              border-radius: 6px;
+              overflow: hidden;
+              max-height: 100%;
+              max-width: 300px;
+              margin: 0 auto;
+            }
+            .card-toc .header {
+              height: 60px;
+              background: #e3efee;
+            }
+            .card-toc .header .avatar {
+              width: 80px;
+              position: relative;
+              margin: 0 auto;
+            }
+            .card-toc .header .avatar img {
+              display: block;
+              border-radius: 50%;
+              position: absolute;
+              bottom: -42px;
+              border: 4px solid white;
+            }
+            .card-toc .card-body {
+              padding: 30px;
+            }
+            .card-toc .card-body .toc-headline {
+              font-size: 90%;
+              color: #8fada9;
+            }
+            .card-toc .toc-list {
+              padding-top: 8px;
+              font-size: 92%;
+              color: #999;
+            }
+          </style>
+          <aside class="mt-6">
+            <div class="card card-toc">
+              <div class="header"></div>
+              <div class="card-body">
+                <h5 class="toc-headline">${heading}</h5>
+                <div class="toc-list is-size-7">
+                  <ul class="menu-list">
+                  ${unsafeHTML(list_item)}
+                </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </aside>
+          </aside>
       `;
 			})
 			.catch(error => {
