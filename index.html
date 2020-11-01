@@ -1,141 +1,196 @@
 <!DOCTYPE html>
 <html lang="en-us">
+	<head>
+		<title>Yax Web Assets</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			!(function () {
+			  var analytics = (window.analytics = window.analytics || []);
+			  if (!analytics.initialize)
+			    if (analytics.invoked)
+			      window.console &&
+			        console.error &&
+			        console.error('Segment snippet included twice.');
+			    else {
+			      analytics.invoked = !0;
+			      analytics.methods = [
+			        'trackSubmit',
+			        'trackClick',
+			        'trackLink',
+			        'trackForm',
+			        'pageview',
+			        'identify',
+			        'reset',
+			        'group',
+			        'track',
+			        'ready',
+			        'alias',
+			        'debug',
+			        'page',
+			        'once',
+			        'off',
+			        'on',
+			        'addSourceMiddleware',
+			        'addIntegrationMiddleware',
+			        'setAnonymousId',
+			        'addDestinationMiddleware'
+			      ];
+			      analytics.factory = function (e) {
+			        return function () {
+			          var t = Array.prototype.slice.call(arguments);
+			          t.unshift(e);
+			          analytics.push(t);
+			          return analytics;
+			        };
+			      };
+			      for (var e = 0; e < analytics.methods.length; e++) {
+			        var key = analytics.methods[e];
+			        analytics[key] = analytics.factory(key);
+			      }
+			      analytics.load = function (key, e) {
+			        var t = document.createElement('script');
+			        t.type = 'text/javascript';
+			        t.async = !0;
+			        t.src =
+			          'https://cdn.segment.com/analytics.js/v1/' +
+			          key +
+			          '/analytics.min.js';
+			        var n = document.getElementsByTagName('script')[0];
+			        n.parentNode.insertBefore(t, n);
+			        analytics._loadOptions = e;
+			      };
+			      analytics.SNIPPET_VERSION = '4.13.1';
+			      analytics.load('6FavLc7XSWpcaOQg3KCYEhF3NG7wXKa8');
+			      analytics.page('Assets Home', {
+			        title: 'Assets Home',
+			        url: 'https://assets.yax.com/assets-home'
+			      });
+			    }
+			})();
+			analytics.ready(function () {
+			  ga('require', 'linker');
+			  ga('linker:autoLink', ['yax.com']);
+			});
+		</script>
+		<link rel="icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="https://assets.yax.com/images/favicons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="https://assets.yax.com/images/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="https://assets.yax.com/images/favicons/favicon-16x16.png" />
+		<link rel="manifest" href="https://assets.yax.com/images/favicons/site.webmanifest" />
+		<meta name="description" content="A library of JavaScript, stylesheets, and images for the yax.com project." />
+		<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css" />
+		<link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+		<script type="module" src="/scripts/yax-tags-library.js"></script>
+		<script type="module" src="/scripts/tags/yax-template-card.js"></script>
+		<script type="module" src="/scripts/tags/yax-template-modal.js"></script>
+		<script defer src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+	</head>
 
-<head>
-  <title>Yax Web Assets</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
-    analytics.load("6FavLc7XSWpcaOQg3KCYEhF3NG7wXKa8");
-    analytics.page('Assets Home', {
-      title: 'Assets Home',
-      url: 'https://assets.yax.com/assets-home'
-    });
-    }}();
-    analytics.ready(function () {
-      ga('require', 'linker');
-      ga('linker:autoLink', ['yax.com']);
-    });
-  </script>
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://assets.yax.com/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://assets.yax.com/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://assets.yax.com/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="https://assets.yax.com/images/favicons/site.webmanifest">
-  <meta name="description" content="A library of JavaScript, stylesheets, and images for the yax.com project.">
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
-  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-  <script type="module" src="/scripts/yax-tags-library.js"></script>
-  <script type="module" src="/scripts/tags/yax-template-card.js"></script>
-  <script type="module" src="/scripts/tags/yax-template-modal.js"></script>
-  <script defer src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-</head>
+	<body>
+		<header style="min-height: 64px; background: black">
+			<yax-navbar></yax-navbar>
+		</header>
 
-<body>
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-navbar&gt; tag should display a navbar above.
+			</div>
+		</article>
 
-<header style="min-height: 64px; background: black;">
-  <yax-navbar></yax-navbar>
-</header>
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-author-kehoe&gt; tag should display below.
+			</div>
+		</article>
+		<div>
+			<yax-author-kehoe></yax-author-kehoe>
+		</div>
 
-<article class="message is-info is-small">
-  <div class="message-body">
-    The &lt;yax-navbar&gt; tag should display a navbar above.
-  </div>
-</article>
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-template-card&gt; tag should display below.
+			</div>
+		</article>
+		<div>
+			<yax-template-card template_id="yaxt-tinysites-tufte" template_title="Tufte" description="Nothing could be simpler. Clean, standards-based HTML with on-page editing." template_img="https://assets.yax.com/images/templates/yaxt-tinysites-tufte.png"> </yax-template-card>
+			<yax-template-modal></yax-template-modal>
+		</div>
 
-<div>
-  <yax-template-card
-    template_id="yaxt-tinysites-tufte"
-    template_title="Tufte"
-    description="Nothing could be simpler. Clean, standards-based HTML with on-page editing."
-    template_img="https://assets.yax.com/images/templates/yaxt-tinysites-tufte.png">
-  </yax-template-card>
-  <yax-template-modal></yax-template-modal>
-</div>
+		<main>
+			<section class="hero">
+				<div class="hero-body">
+					<div class="container">
+						<h1 class="title inverse">Yax Web Assets</h1>
+						<h2 class="subtitle">Demonstration Page</h2>
+					</div>
+				</div>
+			</section>
+			<section id="doc-content" class="content">
+				<div class="container">
+					<article class="message is-info is-small">
+						<div class="message-body">
+							The &lt;yax-markdown&gt; tag should load and display the contents of the README.md Markdown file below.
+						</div>
+					</article>
+					<yax-markdown theme="okaidia" mdsrc=""> </yax-markdown>
+				</div>
+			</section>
+		</main>
 
-  <main>
-    <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title inverse">
-          Yax Web Assets
-        </h1>
-        <h2 class="subtitle">
-          Demonstration Page
-        </h2>
-      </div>
-    </div>
-  </section>
-    <section id="doc-content" class="content">
-    <div class="container">
-      <article class="message is-info is-small">
-        <div class="message-body">
-          The &lt;yax-markdown&gt; tag should load and display the contents of the README.md Markdown file below.
-        </div>
-      </article>
-      <yax-markdown theme="okaidia" mdsrc="">
-      </yax-markdown>
-      </div>
-    </section>
-  </main>
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-tutorial-hero&gt; tag should display below.
+			</div>
+		</article>
+		<div>
+			<yax-tutorial-hero></yax-tutorial-hero>
+		</div>
 
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-tutorial-crumbs&gt; tag should display below.
+			</div>
+		</article>
+		<div>
+			<yax-tutorial-crumbs></yax-tutorial-crumbs>
+		</div>
 
-<article class="message is-info is-small">
-  <div class="message-body">
-    The &lt;yax-tutorial-hero&gt; tag should display below.
-  </div>
-</article>
-<div>
-  <yax-tutorial-hero></yax-tutorial-hero>
-</div>
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-tutorial-toc&gt; tag should display below.
+			</div>
+		</article>
+		<div>
+			<yax-tutorial-toc></yax-tutorial-toc>
+		</div>
 
-<article class="message is-info is-small">
-  <div class="message-body">
-    The &lt;yax-tutorial-crumbs&gt; tag should display below.
-  </div>
-</article>
-<div>
-  <yax-tutorial-crumbs></yax-tutorial-crumbs>
-</div>
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-articles-list&gt; tag should display below.
+			</div>
+		</article>
+		<div>
+			<yax-articles-list></yax-articles-list>
+		</div>
 
-<article class="message is-info is-small">
-  <div class="message-body">
-    The &lt;yax-tutorial-toc&gt; tag should display below.
-  </div>
-</article>
-<div>
-  <yax-tutorial-toc></yax-tutorial-toc>
-</div>
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-tutorial-paginate&gt; tag should display below.
+			</div>
+		</article>
+		<div>
+			<yax-tutorial-paginate></yax-tutorial-paginate>
+		</div>
 
-<article class="message is-info is-small">
-  <div class="message-body">
-    The &lt;yax-articles-list&gt; tag should display below.
-  </div>
-</article>
-<div>
-  <yax-articles-list></yax-articles-list>
-</div>
-
-<article class="message is-info is-small">
-  <div class="message-body">
-    The &lt;yax-tutorial-paginate&gt; tag should display below.
-  </div>
-</article>
-<div>
-  <yax-tutorial-paginate></yax-tutorial-paginate>
-</div>
-
-  <article class="message is-info is-small">
-  <div class="message-body">
-    The &lt;yax-footer&gt; tag should display a footer below.
-  </div>
-</article>
-<footer>
-  <yax-footer></yax-footer>
-</footer>
-
-</body>
-
+		<article class="message is-info is-small">
+			<div class="message-body">
+				The &lt;yax-footer&gt; tag should display a footer below.
+			</div>
+		</article>
+		<footer>
+			<yax-footer></yax-footer>
+		</footer>
+	</body>
 </html>
