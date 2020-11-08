@@ -138,6 +138,36 @@ export class YaxMarkdown extends LitElement {
       text-align: center;
       font-size: 0.7rem;
     }
+    @media only screen and (min-width : 768px) {
+      blockquote {
+        font-style: italic;
+        font-weight: bold;
+        font-family: serif;
+        float: left;
+        margin-left: 15px;
+        width: 150px;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: #655c9d;
+      }
+      blockquote p {
+        display: inline;
+      }
+    }
+    @media only screen and (max-width : 768px) {
+      blockquote {
+        font-style: italic;
+        font-weight: bold;
+        font-family: serif;
+        margin-left: 15px;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: #655c9d;
+      }
+      blockquote p {
+        display: inline;
+      }
+    }
     </style>`;
 	}
 	/**
