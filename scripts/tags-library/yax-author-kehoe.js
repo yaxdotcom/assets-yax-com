@@ -66,7 +66,8 @@ export class YaxAuthorKehoe extends LitElement {
       				<h3 class="author-name">Daniel Kehoe</h3>
       			</div>
       			<div class="author-bio has-text-centered is-size-7">
-      				<p>Daniel Kehoe is the founder of yax.com, past founder of the RailsApps open source project, and author of the book "Learn Ruby on Rails."</p>
+      				<p>Daniel Kehoe is the founder of yax.com, past founder of the RailsApps open source project, and author of the book "Learn Ruby on Rails." Get his Twitter updates at <a target="blank" href="https://twitter.com/rails_apps">@rails_apps</a>.
+              </p>
       			</div>
       		</div>
       	</div>
