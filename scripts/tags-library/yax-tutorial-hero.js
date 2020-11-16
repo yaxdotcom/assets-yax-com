@@ -5,30 +5,30 @@ import { until } from 'https://jspm.dev/lit-html@1/directives/until.js';
 import { unsafeHTML } from 'https://jspm.dev/lit-html@1/directives/unsafe-html.js';
 
 export class YaxTutorialHero extends LitElement {
-  createRenderRoot() {
-    return this;
-  }
-  load() {
-    return fetch('manifest.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Could not find manifest file');
-      }
-      return response.json();
-    })
-    .then(tutorial => {
-      let level_color = 'is-success'
-      switch (tutorial.level) {
-        case 'intermediate':
-          level_color = 'is-warning'
-          break
-        case 'advanced':
-          level_color = 'is-danger'
-          break
-      }
-      let tags = '';
-      if(tutorial.audience != null){
-        tags += `
+	createRenderRoot() {
+		return this;
+	}
+	load() {
+		return fetch('manifest.json')
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Could not find manifest file');
+				}
+				return response.json();
+			})
+			.then(tutorial => {
+				let level_color = 'is-success';
+				switch (tutorial.level) {
+					case 'intermediate':
+						level_color = 'is-warning';
+						break;
+					case 'advanced':
+						level_color = 'is-danger';
+						break;
+				}
+				let tags = '';
+				if (typeof tutorial.audience === 'string' && tutorial.audience.length > 0) {
+					tags += `
           <div class="control">
             <div class="tags has-addons">
               <span class="tag is-dark">audience</span>
@@ -36,9 +36,9 @@ export class YaxTutorialHero extends LitElement {
             </div>
           </div>
         `;
-      }
-      if(tutorial.level != null){
-        tags += `
+				}
+				if (typeof tutorial.level === 'string' && tutorial.level.length > 0) {
+					tags += `
           <div class="control">
             <div class="tags has-addons">
               <span class="tag is-dark">level</span>
@@ -46,9 +46,9 @@ export class YaxTutorialHero extends LitElement {
             </div>
           </div>
         `;
-      }
-      if(tutorial.topic != null){
-        tags += `
+				}
+				if (typeof tutorial.topic === 'string' && tutorial.topic.length > 0) {
+					tags += `
           <div class="control">
             <div class="tags has-addons">
               <span class="tag is-dark">topic</span>
@@ -56,9 +56,9 @@ export class YaxTutorialHero extends LitElement {
             </div>
           </div>
         `;
-      }
-      if(tutorial.subtopic != null){
-        tags += `
+				}
+				if (typeof tutorial.subtopic === 'string' && tutorial.subtopic.length > 0) {
+					tags += `
           <div class="control">
             <div class="tags has-addons">
               <span class="tag is-dark">subtopic</span>
@@ -66,8 +66,8 @@ export class YaxTutorialHero extends LitElement {
             </div>
           </div>
         `;
-      }
-      return html`
+				}
+				return html`
       <section class="hero has-background-white-ter">
         <div class="hero-body">
           <div class="container has-text-centered">
@@ -79,18 +79,18 @@ export class YaxTutorialHero extends LitElement {
         </div>
       </section>
       `;
-    })
-    .catch(error => {
-      console.error('Fetch failure:', error);
-      return html`<h4>Error</h4>`;
-    })
-  }
-  render() {
-    return until(
-      this.load().then(content => content ),
-      html`<h4>Loading...</h4>`
-    )
-  }
+			})
+			.catch(error => {
+				console.error('Fetch failure:', error);
+				return html`<h4>Error</h4>`;
+			});
+	}
+	render() {
+		return until(
+			this.load().then(content => content),
+			html`<h4>Loading...</h4>`
+		);
+	}
 }
 
 customElements.define('yax-tutorial-hero', YaxTutorialHero);
