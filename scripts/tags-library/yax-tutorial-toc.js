@@ -7,7 +7,7 @@ export class YaxTutorialToc extends LitElement {
 		return this;
 	}
 	load() {
-		let type = 'tutorial';
+		let pagination = 'multipage';
 		return fetch('manifest.json')
 			.then(response => {
 				if (!response.ok) {
@@ -16,16 +16,16 @@ export class YaxTutorialToc extends LitElement {
 				return response.json();
 			})
 			.then(tutorial => {
-				if (tutorial.type == 'article') {
-					type = 'article';
+				if (tutorial.pagination == 'onepage') {
+					pagination = 'onepage';
 				}
 				return tutorial.pages;
 			})
 			.then(pages => {
-				let heading = 'Tutorial Contents';
+				let heading = 'Contents/Pages';
 				let list_item = '';
-				if (type == 'article') {
-					heading = 'Articles';
+				if (pagination == 'onepage') {
+					heading = 'Collected Articles';
 				}
 				for (const [key, value] of Object.entries(pages)) {
 					list_item += '<li><a href="';

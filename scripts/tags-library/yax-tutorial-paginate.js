@@ -14,7 +14,7 @@ export class YaxTutorialPaginate extends LitElement {
 				return response.json();
 			})
 			.then(tutorial => {
-				if (tutorial.type == 'article') {
+				if (tutorial.pagination == 'onepage') {
 					return Promise.reject(html`&nbsp;`);
 				} else {
 					return tutorial.pages;
