@@ -1,11 +1,16 @@
 import { LitElement, html } from 'https://jspm.dev/lit-element@2';
 
 export class YaxFooter extends LitElement {
-  createRenderRoot() {
-    return this;
-  }
-  render(){
-    return html`
+	createRenderRoot() {
+		return this;
+	}
+	render() {
+		return html`
+    <style>
+      .footer a:hover {
+        color: white;
+      }
+    </style>
     <div class="footer has-text-white has-text-weight-semibold has-background-black">
       <div class="container">
         <div class="columns is-desktop">
@@ -75,6 +80,6 @@ export class YaxFooter extends LitElement {
         </div>
       </div>
     `;
-  }
+	}
 }
 customElements.define('yax-footer', YaxFooter);
