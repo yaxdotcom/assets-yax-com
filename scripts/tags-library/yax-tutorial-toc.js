@@ -73,7 +73,7 @@ export class YaxTutorialToc extends LitElement {
               color: #999;
             }
           </style>
-          <aside class="mt-6">
+          <aside class="mt-6 mb-6">
             <div class="card card-toc">
               <div class="header"></div>
               <div class="card-body">
