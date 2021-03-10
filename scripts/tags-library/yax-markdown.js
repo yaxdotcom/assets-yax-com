@@ -82,6 +82,8 @@ export class YaxMarkdown extends LitElement {
 	 */
 	fetchMd(src) {
 		let filename = window.location.href
+      .split("?")[0]
+      .split("#")[0]
 			.split('/')
 			.pop()
 			.replace('.html', '');
