@@ -65,7 +65,7 @@ export class YaxFooter extends LitElement {
           <h6 class="title is-6 has-text-white">Resources</h6>
           <ul style="list-style-type: circle; list-style-position: inside;">
             <li><a href="https://www.reddit.com/r/stackless/">Stackless on Reddit</a></li>
-            <li><a href="https://stackless.community/">The Stackless Newsletter</a></li>
+            <li><a href="https://stackless.community/">Stackless Newsletter</a></li>
             <li><a href="https://blog.yax.com/">Blog</a></li>
             <li><a href="https://yax.com/pricing.html">Pricing &amp; Comparison</a></li>
             <li><a href="mailto:support@yax.com">support@yax.com</a></li>
