@@ -1,5 +1,5 @@
 import { LitElement, html } from 'https://cdn.skypack.dev/lit-element@2.4.0';
-import { until } from 'https://cdn.skypack.dev/lit-html@1/directives/until.js';
+import { until } from 'https://cdn.skypack.dev/lit-html@1.3.0/directives/until.js';
 
 export class YaxTutorialPaginate extends LitElement {
 	createRenderRoot() {
