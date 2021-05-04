@@ -1,4 +1,4 @@
-import { LitElement, html } from 'https://cdn.skypack.dev/lit-element@2.4.0';
+import { LitElement, html } from 'https://jspm.dev/lit';
 import faunadb from 'https://jspm.dev/npm:faunadb@2.14.2';
 import 'https://assets.yax.com/scripts/tags/yax-template-card.js';
 import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'

@@ -1,4 +1,4 @@
-import { LitElement, html } from 'https://cdn.skypack.dev/lit-element@2.4.0';
+import { LitElement, html } from 'https://jspm.dev/lit';
 
 export class YaxAuthorKehoe extends LitElement {
 	createRenderRoot() {
