@@ -1,5 +1,6 @@
-import { LitElement, html } from 'https://jspm.dev/lit';
-import { unsafeHTML } from 'https://jspm.dev/lit/directives/unsafe-html.js';
+import { LitElement, html } from 'https://cdn.skypack.dev/pin/lit@v2.0.0-rc.1-VBzsFNL5Th0HrFTVPQSz/mode=imports/optimized/lit.js';
+import { unsafeHTML } from 'https://cdn.skypack.dev/pin/lit@v2.0.0-rc.1-VBzsFNL5Th0HrFTVPQSz/mode=imports/optimized/lit/directives/unsafe-html.js';
+
 
 export class YaxTemplateCard extends LitElement {
 
