@@ -8,7 +8,6 @@ import { YaxMarkdown } from './yax-markdown.js';
 import { YaxNavbar } from './yax-navbar.js';
 import { YaxSubscriptionOffer } from './yax-subscription-offer.js';
 import { YaxTemplateCard } from './yax-template-card.js';
-import { YaxTemplateGallery } from './yax-template-gallery.js';
 import { YaxTemplateModal } from './yax-template-modal.js';
 import { YaxTutorialCrumbs } from './yax-tutorial-crumbs.js';
 import { YaxTutorialHero } from './yax-tutorial-hero.js';
@@ -25,7 +24,6 @@ const YaxTags = {
   YaxNavbar,
   YaxSubscriptionOffer,
   YaxTemplateCard,
-  YaxTemplateGallery,
   YaxTemplateModal,
   YaxTutorialCrumbs,
   YaxTutorialHero,
