@@ -1,7 +1,7 @@
-import { LitElement, html } from 'https://cdn.skypack.dev/pin/lit@v2.0.0-rc.1-VBzsFNL5Th0HrFTVPQSz/mode=imports/optimized/lit.js';
-import faunadb from 'https://cdn.skypack.dev/pin/faunadb@v4.2.0-w96MXOARYnCtV5upO1if/mode=imports/optimized/faunadb.js';
+import { LitElement, html } from 'https://jspm.dev/lit@2.0.0-rc.2';
+import faunadb from 'https://jspm.dev/faunadb@4.2.0';
 import './yax-template-card.js';
-import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+import Swiper from 'https://jspm.dev/swiper@6.6.1';
 
 async function fetchData(category) {
   // FAUNA_ACCESS_KEY has read-only access to the templates collection

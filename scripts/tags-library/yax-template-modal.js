@@ -1,4 +1,4 @@
-import { LitElement, html } from 'https://cdn.skypack.dev/pin/lit@v2.0.0-rc.1-VBzsFNL5Th0HrFTVPQSz/mode=imports/optimized/lit.js';
+import { LitElement, html } from 'https://jspm.dev/lit@2.0.0-rc.2';
 
 export class YaxTemplateModal extends LitElement {
 
