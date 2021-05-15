@@ -1,6 +1,6 @@
 import { LitElement, html } from 'https://cdn.skypack.dev/pin/lit@v2.0.0-rc.1-VBzsFNL5Th0HrFTVPQSz/mode=imports/optimized/lit.js';
 import faunadb from 'https://cdn.skypack.dev/pin/faunadb@v4.2.0-w96MXOARYnCtV5upO1if/mode=imports/optimized/faunadb.js';
-import 'https://assets.yax.com/scripts/tags/yax-template-card.js';
+import './yax-template-card.js';
 import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 
 async function fetchData(category) {
